@@ -1,0 +1,14 @@
+version: '3'
+services:
+  postgres:
+    image: "postgres:latest"
+    hostname: postgres
+    environment:
+       POSTGRES_USER: postgres
+       POSTGRES_PASSWORD: postgres
+       POSTGRES_DATABASE: todo
+       POSTGRES_ADMIN_PASSWORD: postgres
+#    volumes:
+#      - database-data:/var/lib/postgresql/data/
+    ports:
+      - 5432:54232
